@@ -1,0 +1,87 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  transition: .2s; 
+}
+html{
+  /* font-size: 10px; */
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'DM Sans',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  
+}
+/* add font */
+h1, h2, h3, h4, h5, a{
+  font-family: 'Montserrat', sans-serif;
+  /* letter-spacing: 0.1em; */
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+}
+/* add font */
+p{
+  font-family: 'DM Sans', sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+}
+a{
+  color: #fff;
+}
+figure{
+  margin: 0px;
+  padding: 0px;
+}
+img{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.page-name{
+  position: absolute;
+  top: 2.5em;
+  right: 3em;
+  z-index: 9;
+}
+.page-name p{
+  letter-spacing: .2em;
+  font-size: 1.2rem;
+  /* text-decoration: line-through; */
+  border-top: .15em white solid;
+  border-bottom: .15em white solid;
+}
+
+@media screen and (max-width: 480px) {
+  .menu-buttom{
+    top: 1.5em;
+    left: 1em;
+  }
+  .page-name {
+      right: 1.5em;
+      top: 2em;
+  }
+  .page-name p{
+      width: .8em;
+      word-wrap: break-word;
+      text-align: center;
+      font-size: 1rem;
+  }
+}

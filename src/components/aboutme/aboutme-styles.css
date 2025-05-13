@@ -1,0 +1,70 @@
+.aboutme-satelite{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 200px;
+    -webkit-animation: sateliteAboutme 10s alternate infinite;
+    -moz-animation:sateliteAboutme 10s alternate infinite;
+    animation:sateliteAboutme 10s alternate infinite;
+}
+
+@-moz-keyframes sateliteAboutme { 
+    0% { -moz-transform: rotate(0deg) ; } 
+    100% { -moz-transform: rotate(15deg); } 
+}
+@-webkit-keyframes sateliteAboutme { 
+    0% { -moz-transform: rotate(0deg) ; } 
+    100% { -moz-transform: rotate(15deg) ;  } 
+}
+@keyframes sateliteAboutme { 
+    0% { 
+        transform:  rotate(0deg);
+    } 
+    100% {
+        transform: rotate(15deg)
+    } 
+}
+.medium-container{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+}
+.title-aboutme{
+    padding-bottom: 10px;
+}
+.small-parragraph{
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+}
+.composicion-vr{
+    position: absolute;
+    width: fit-content;
+    top: 60%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    z-index: 0;
+}
+.aboutme-planetface{
+    max-width: 400px;
+    z-index: 2;
+    position: relative;
+}
+.vr-face{
+    position: absolute;
+    width: 200px;
+    top: -150px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 1;
+}
+
+.am-parrafo2{
+    padding-top: 150px;
+    margin-right: 0px;
+}

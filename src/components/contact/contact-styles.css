@@ -1,0 +1,121 @@
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.stars-home{
+    display: block !important;
+}
+.stars-container-home{
+    display: block !important;
+}
+.twinkling-home{
+    display: block !important;
+}
+.img-center{
+    position: relative;
+    overflow: hidden;
+    padding: 0 2em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 2;
+}
+.img-center figure{
+    margin: auto;
+}
+.img-center .asteroid{
+    max-width: 400px;
+    margin-top: -100px;
+    -webkit-animation:rotatehole 100s linear infinite;
+    -moz-animation:rotatehole 100s linear infinite;
+    animation:rotatehole 100s linear infinite;
+    z-index: 1;
+}
+.img-center .contact-astronauta{
+    max-width: 200px;
+    margin-top: -120px;
+    z-index: 2;
+    -webkit-animation: astronaut 10s alternate infinite;
+    -moz-animation:astronaut 10s alternate infinite;
+    animation:astronaut 10s alternate infinite;
+}
+
+@-moz-keyframes astronaut { 
+    0% { -moz-transform:  translate(0); } 
+    100% { -moz-transform:  translate(0px, -20px); } 
+}
+@-webkit-keyframes astronaut { 
+    0% { -moz-transform:  translate(0); } 
+    100% { -moz-transform:  translate(0px, -20px); } 
+}
+@keyframes astronaut { 
+    0% { 
+        -webkit-transform: translate(0);
+        transform:  translate(0);
+    } 
+    100% { 
+        -webkit-transform: translate(0px, -20px);
+        transform: translate(0px, -20px);
+    } 
+}
+.img-center h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+.send-mail{
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    display: block;
+    margin: auto;
+    top: inherit;
+    left: initial;
+}
+.page-contact-container {
+    margin: 0 !important;
+    padding-top: 5em;
+}
+.page-contact-container .fa-brands{
+    color: white !important;
+}
+.page-contact-container .square-white-important{
+    border: 0.08em solid #fff !important;
+}
+.satelite{
+    position: absolute;
+    z-index: 0;
+    bottom: -180px;
+    left: -150px;
+    -webkit-animation: satelite 10s alternate infinite;
+    -moz-animation:satelite 10s alternate infinite;
+    animation:satelite 10s alternate infinite;
+}
+
+@-moz-keyframes satelite { 
+    0% { -moz-transform: rotate(0deg) translate(0); } 
+    100% { -moz-transform: rotate(5deg) translate(-30px, -20px); } 
+}
+@-webkit-keyframes satelite { 
+    0% { -moz-transform: rotate(0deg) translate(0); } 
+    100% { -moz-transform: rotate(5deg)  translate(-30px, -20px);  } 
+}
+@keyframes satelite { 
+    0% { 
+        -webkit-transform:rotate(0deg) translate(0);
+        transform:  translate(0);
+    } 
+    100% { 
+        -webkit-transform:rotate(0deg) translate(0);
+        transform: rotate(5deg) translate(-30px, -20px); 
+    } 
+}
+
